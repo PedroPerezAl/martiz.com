@@ -1,83 +1,149 @@
-body {
-    background-color: lightblue;
-    margin: 0;
-    padding: 0;
-}
+/** FUENTES **/
 
-header {
-    display: flex;
-    justify-content: space-between;
-    min-height: 120px;
-    width: 100%;
-    background-color: white;
-    align-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=PT+Sans:ital@1&display=swap');
 
+ /*MEDIDAS FIRST MOBILE */
 
-.logo {
-    display: flex;
-}
+ 
+/******************** HEADER ******************************/
 
-.logo img {
-    width: 400px;
-}
-
-button{
-    background-color: white;
-    border: 1px solid black;
-
-}
-.abrir-menu, .cerrar-menu {
-    display: none;
-}
-
-ul {
-    display: flex;
-    margin: 30px;
-}
-
-ul li {
-    margin: 20px;
-    list-style-type: none;
-}
-
-/** MEDIAQUERYS **/
-
-@media (max-width:700px) {
-
-    body {
+    body{
         background-color: whitesmoke;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
     }
-
+   
+    header {
+        display: flex;
+        justify-content: space-between;
+        min-height: 120px;
+        width: 100%;
+        background-color: white;
+        align-items: center;
+    }
+   
+   
+   
     .logo img {
         width: 250px;
     }
-  .abrir-menu, .cerrar-menu {
+   
+    .abrir-menu,
+    .cerrar-menu {
         display: block;
-        margin-right: 30px ;
+        margin-right: 30px;
     }
-
+   
     .nav {
-        display: none;
+        display: flex;
         visibility: hidden;
-
+   
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
         background-color: rgb(233, 230, 230);
         position: absolute;
         top: 0;
         right: 0;
+        bottom: 0;
         padding: 2rem;
         width: 30%;
     }
-
-   .nav.visible{
-    opacity: 1;
-    visibility: visible;
-   }
-    .nav-list{
+   
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+   
+    .nav-list {
         flex-direction: column;
         align-items: end;
+    }
+   
+    ul li{
+        list-style-type: none;
+        color: black;
+    }
+    a{
+       text-decoration: none;
+       color: black;
+    }
+ 
+
+    
+
+
+
+ /*MEDIAQUERYS */
+/* TABLET */
+@media (min-width: 480px) {
+    body{
+        background-color: red;
+    }
+}
+
+/* DISPOSITIVOS GRANDES */
+@media (min-width: 992px) {
+    body{
+        background-color: rgb(64, 0, 255);
+    }
+
+    .logo img{
+        width: 400px;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: none;
+        
+    }
+
+    .nav{
+        visibility: visible;
+        position: initial;
+        background-color: white;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items:center ;
+    }
+
+    li{
+        margin-left: 20px;
+    }
+}
+
+/* DISPOSITIVOS EXTRA-GRANDES */
+@media (min-width: 1200px) {
+    body{
+        background-color: rgb(166, 255, 0);
+    }
+
+    .logo img{
+        width: 400px;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: none;
+        
+    }
+
+    .nav{
+        visibility: visible;
+        position: initial;
+        background-color: white;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items:center ;
+    }
+
+    li{
+        margin-left: 20px;
     }
 }
