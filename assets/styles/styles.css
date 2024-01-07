@@ -8,7 +8,7 @@
 /******************** HEADER ******************************/
 
     body{
-        background-color: whitesmoke;
+        background-color: rgb(180, 179, 179);
         margin: 0;
         font-family: 'Montserrat', sans-serif;
     }
@@ -33,21 +33,27 @@
         display: block;
         margin-right: 30px;
     }
+
+   /* .cerrar-menu{
+        margin-top: 30px;
+    } */
    
     .nav {
-        display: flex;
+        opacity: 0;
         visibility: hidden;
    
         display: flex;
         flex-direction: column;
-        align-items: center;
-        background-color: rgb(233, 230, 230);
+       align-items: end; 
+       text-align: center;
+        background-color: whitesmoke;
+       
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        padding: 2rem;
-        width: 30%;
+     top: 0;
+        right: 0; 
+       
+     padding-top: 3rem;
+       
     }
    
     .nav.visible {
@@ -57,16 +63,24 @@
    
     .nav-list {
         flex-direction: column;
-        align-items: end;
+       
     }
-   
+ 
     ul li{
         list-style-type: none;
         color: black;
+        margin: 20px;
+        
     }
     a{
        text-decoration: none;
        color: black;
+       text-align: center;
+    }
+
+    a:hover{
+        color: rgba(75, 72, 72, 0.76);
+        
     }
  
 
