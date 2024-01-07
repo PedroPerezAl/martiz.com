@@ -48,7 +48,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-
+width: 120px;
     padding-top: 3rem;
 
 }
@@ -60,7 +60,12 @@ header {
 
 .nav-list {
     flex-direction: column;
+   
 
+}
+
+ul{
+    text-align: center;
 }
 
 ul li {
