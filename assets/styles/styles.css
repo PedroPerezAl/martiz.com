@@ -2,117 +2,116 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=PT+Sans:ital@1&display=swap');
 
- /*MEDIDAS FIRST MOBILE */
+/*MEDIDAS FIRST MOBILE */
 
- 
+
 /******************** HEADER ******************************/
 
-    body{
-        background-color: rgb(180, 179, 179);
-        margin: 0;
-        font-family: 'Montserrat', sans-serif;
-    }
-   
-    header {
-        display: flex;
-        justify-content: space-between;
-        min-height: 120px;
-        width: 100%;
-        background-color: white;
-        align-items: center;
-    }
-   
-   
-   
-    .logo img {
-        width: 250px;
-    }
-   
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        margin-right: 30px;
-    }
+body {
+    background-color: rgb(180, 179, 179);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
 
-   /* .cerrar-menu{
-        margin-top: 30px;
-    } */
-   
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-   
-        display: flex;
-        flex-direction: column;
-       align-items: end; 
-       text-align: center;
-        background-color: whitesmoke;
-       
-        position: absolute;
-     top: 0;
-        right: 0; 
-       
-     padding-top: 3rem;
-       
-    }
-   
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-   
-    .nav-list {
-        flex-direction: column;
-       
-    }
- 
-    ul li{
-        list-style-type: none;
-        color: black;
-        margin: 20px;
-        
-    }
-    a{
-       text-decoration: none;
-       color: black;
-       text-align: center;
-    }
-
-    a:hover{
-        color: rgba(75, 72, 72, 0.76);
-        
-    }
- 
-
-    
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 120px;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+}
 
 
 
- /*MEDIAQUERYS */
+.logo img {
+    width: 250px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: block;
+    margin-right: 30px;
+}
+
+
+.nav {
+    opacity: 1;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+    background-color: whitesmoke;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding-top: 3rem;
+
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list {
+    flex-direction: column;
+
+}
+
+ul li {
+    list-style-type: none;
+    color: black;
+    margin: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+a:hover {
+    color: rgba(75, 72, 72, 0.76);
+
+}
+
+
+
+
+
+
+/*MEDIAQUERYS */
 /* TABLET */
 @media (min-width: 480px) {
-    body{
+    body {
         background-color: red;
     }
 }
 
 /* DISPOSITIVOS GRANDES */
 @media (min-width: 992px) {
-    body{
+    body {
         background-color: rgb(64, 0, 255);
     }
 
-    .logo img{
+    .logo img {
         width: 400px;
     }
 
     .abrir-menu,
     .cerrar-menu {
         display: none;
-        
+
     }
 
-    .nav{
+    .nav {
+        display: flex;
         visibility: visible;
         position: initial;
         background-color: white;
@@ -121,31 +120,31 @@
     .nav-list {
         display: flex;
         flex-direction: row;
-        align-items:center ;
+        align-items: center;
     }
 
-    li{
+    li {
         margin-left: 20px;
     }
 }
 
 /* DISPOSITIVOS EXTRA-GRANDES */
 @media (min-width: 1200px) {
-    body{
+    body {
         background-color: rgb(166, 255, 0);
     }
 
-    .logo img{
+    .logo img {
         width: 400px;
     }
 
     .abrir-menu,
     .cerrar-menu {
         display: none;
-        
+
     }
 
-    .nav{
+    .nav {
         visibility: visible;
         position: initial;
         background-color: white;
@@ -154,10 +153,11 @@
     .nav-list {
         display: flex;
         flex-direction: row;
-        align-items:center ;
+        align-items: center;
     }
 
-    li{
+    li {
         margin-left: 20px;
+        
     }
 }
