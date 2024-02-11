@@ -8,15 +8,20 @@
 /******************** HEADER ******************************/
 
 body {
-    background-color: rgb(180, 179, 179);
+    background-color: black;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
 }
 
+body p{
+text-align: justify;
+}
+
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr ;
+    
 }
 
 
@@ -95,17 +100,109 @@ a:hover {
 
 }
 
-/********************* INDEX MAIN *****************************************/
-.contenedor_1{
-    grid-column: 1/3;
+/********************* BIO MAIN *****************************************/
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: black;
+    justify-content: center;
+} 
+.fotografia_bio{
+    
+    margin: 1em;
 }
-.contenedor{
-  
-   display: flex;
-    background-image: url(/assets/img/VISUAL_MARTIZ_2.png);
-   background-size: cover;
-   background-position: center;
-   height: 700px;
+
+.fotografia_bio img{
+   width: 100%;
+}
+.texto_bio{
+    
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-align: justify;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+    
+}
+
+/*********** MUSICA MAIN ***********************/
+
+.foto_disco{
+    width: 100%;
+    
+ }
+
+ .musica_portada{
+    color: white;
+    text-align: center;
+    margin: 1em;
+ }
+
+ .musica_portada a{
+    color: white;
+    font-size: larger;
+ }
+
+ .musica_portada_blanca{
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 1em;
+ }
+ .musica_portada ul li{
+    color: white;
+ }
+
+
+/********************* VIDEO MAIN *****************************************/
+
+.video{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+/********************* CONCIERTOS MAIN *****************************************/
+.conciertos{
+    margin: 1em;
+}
+.foto_tabla img{
+    width: 100%;
+}
+
+table{
+    color: white;
+}
+
+table th{
+    background-color: white;
+    color: black;
+}
+
+table td{
+    border-bottom: 1px solid white;
+}
+
+/********************* GALERIA MAIN *****************************************/
+.galeria{
+    margin: 1em;
+}
+.galeria img{
+    width: 100%;
+}
+
+/********************* CONTACTO MAIN *****************************************/
+.contacto{
+    margin: 1em;
+}
+
+.fotografia_contacto img{
+    width: 100%;
+}
+.formulario{
+    color: white;
+    width: 100%;
 }
 
 /********************* FOOTER *****************************************/
@@ -139,6 +236,7 @@ footer{
     margin: 5px;
 }
 
+/****************** ESTILOS BIO ****************************/
 
 
 
@@ -190,12 +288,19 @@ footer{
     li {
         margin-left: 20px;
     }
+
+    main{
+        display: grid;
+        grid-template-columns: auto auto ;
+        justify-content: center;
+        
+    }
 }
 
 /* DISPOSITIVOS EXTRA-GRANDES */
 @media (min-width: 1200px) {
     body {
-        background-color: rgb(166, 255, 0);
+        background-color: rgb(0, 0, 0);
     }
 
    header{
