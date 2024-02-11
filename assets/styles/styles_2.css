@@ -132,6 +132,13 @@ main {
 
 }
 
+.bio-container a{
+    color: white;
+}
+
+.bio-container a:hover{
+    color: gray;
+}
 /*********** MUSICA MAIN ***********************/
 
 .foto_disco {
@@ -160,6 +167,8 @@ main {
 .musica_portada ul li {
     color: white;
 }
+
+
 
 
 /********************* VIDEO MAIN *****************************************/
@@ -272,6 +281,16 @@ footer {
         
     }
 
+    .formulario{
+        margin: 1em;
+    }
+
+    .fotografia_contacto{
+        margin: 1em;
+    }
+
+    
+
     
 }
 
@@ -310,7 +329,7 @@ footer {
 
     main {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
 
     }
@@ -318,6 +337,14 @@ footer {
     .texto_bio {
         margin:0;
         margin-right: 1em;
+    }
+
+    .formulario{
+        margin: 1em;
+    }
+
+    .fotografia_contacto{
+        margin: 1em;
     }
 }
 
@@ -360,6 +387,14 @@ footer {
         margin:0;
         margin-right: 1em;
         margin-left: 1em;
+    }
+
+    .formulario{
+        margin: 1em;
+    }
+
+    .grid-container-musica{
+        text-align: center;
     }
 
 }
