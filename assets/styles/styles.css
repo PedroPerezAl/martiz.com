@@ -195,7 +195,7 @@ footer{
 /* DISPOSITIVOS EXTRA-GRANDES */
 @media (min-width: 1200px) {
     body {
-        background-color: rgb(166, 255, 0);
+        
     }
 
    header{
