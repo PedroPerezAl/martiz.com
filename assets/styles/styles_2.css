@@ -121,6 +121,29 @@ main {
     color: gray;
 }
 /*********** MUSICA MAIN ***********************/
+.musica-container{
+    grid-template-columns: 1fr;
+    padding: 1em;
+    color: white;
+}
+
+.musica-container a{
+    color: white;
+   
+}
+
+.musica-container i{
+    margin-right: 20px;
+}
+
+.texto_musica{
+    text-align: center;
+    margin: 10px;
+}
+.texto_musica :nth-child(4){
+    text-align: justify;
+
+}
 
 .foto_disco {
     width: 100%;
@@ -269,7 +292,9 @@ footer {
     }
 
     
-
+    .musica-container{
+        grid-template-columns: 1fr 1fr;
+    }
     
 }
 
@@ -306,6 +331,10 @@ footer {
     .texto_bio {
         margin:0;
         margin-right: 1em;
+    }
+
+    .musica-container{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .formulario{
