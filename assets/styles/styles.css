@@ -8,110 +8,94 @@
 /******************** HEADER ******************************/
 
 body {
-    background-color: rgb(180, 179, 179);
     margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-
-
-header {
-    display: flex;
-    justify-content: space-between;
-    min-height: 120px;
+    box-sizing: border-box;
     width: 100%;
-    background-color: white;
-    align-items: center;
-    grid-column: 1/3;
-}
-
-
-
-.logo img {
-    width: 300px;
-}
-
-.abrir-menu,
-.cerrar-menu {
-    display: block;
-    margin-right: 30px;
-}
-
-
-.nav {
-    opacity: 1;
-    visibility: hidden;
-
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    text-align: center;
-    background-color: whitesmoke;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-width: 120px;
-    padding-top: 3rem;
-
-}
-
-.nav.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-.nav-list {
-    flex-direction: column;
-   
-
-}
-
-ul{
-    text-align: center;
-}
-
-ul li {
-    list-style-type: none;
-    color: black;
-    margin: 20px;
-
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+header {
+    grid-column: 1/3;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 3rem;
+    flex-direction: column;
+    padding: 0;
+    background-color: white;
+    transform: translatey(-135%);
+    transition: transform 0.4s;
+}
+
+#hamburguesa {
+    display: none;
+}
+
+#icono {
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu li {
+    padding: 1rem;
+    margin: 1px;
     text-align: center;
+    list-style-type: none;
+}
+
+#hamburguesa:checked~.menu {
+    transform: translatey(0);
 }
 
 a:hover {
     color: rgba(75, 72, 72, 0.76);
-
 }
 
 /********************* INDEX MAIN *****************************************/
-.contenedor_1{
+.contenedor_1 {
     grid-column: 1/3;
+    
 }
-.contenedor{
-  
-   display: flex;
-    background-image: url(/assets/img/VISUAL_MARTIZ_2.png);
-   background-size: cover;
-   background-position: center;
-   height: 700px;
+
+.contenedor {
+    display: flex;
+    background-image: url(../img/VISUAL_MARTIZ_2.png);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
 }
 
 /********************* FOOTER *****************************************/
 
 
-footer{
+footer {
     grid-column: 1/3;
     display: flex;
     flex-direction: column;
@@ -122,20 +106,20 @@ footer{
 }
 
 
-.logos{
+.logos {
     margin: 10px;
 }
 
-.logos a{
-   margin-left: 20px;
+.logos a {
+    margin-left: 20px;
 }
 
-.politicas{
+.politicas {
     margin-bottom: 10px;
-   
+
 }
 
-.politicas a{
+.politicas a {
     margin: 5px;
 }
 
@@ -145,95 +129,61 @@ footer{
 /*MEDIAQUERYS */
 /* TABLET */
 @media (min-width: 480px) {
-    body {
-        background-color: red;
-    }
 
-    .contenedor{
+
+    .contenedor {
         display: flex;
-         background-image: url(/assets/img/VISUAL_MARTIZ_2.png);
+        background-image: url(../img/VISUAL_MARTIZ_2.png);
         background-size: cover;
         background-position: center;
         height: 1000px;
-     }
+    } 
 }
 
 /* DISPOSITIVOS GRANDES */
 @media (min-width: 992px) {
-    body {
-        background-color: rgb(64, 0, 255);
+
+
+
+    .logo {
+        width: 200px;
     }
 
-    .logo img {
-        width: 400px;
-    }
-
-    .abrir-menu,
-    .cerrar-menu {
-        display: none;
-
-    }
-
-    .nav {
-        display: flex;
-        visibility: visible;
-        position: initial;
-        background-color: white;
-    }
-
-    .nav-list {
-        display: flex;
+    .menu {
+        transform: translatex(0%);
+        background-color: transparent;
+        top: 0;
         flex-direction: row;
+        justify-content: end;
         align-items: center;
+        align-self: center;
     }
 
-    li {
-        margin-left: 20px;
+
+    #icono {
+        display: none;
     }
+
+
 }
 
 /* DISPOSITIVOS EXTRA-GRANDES */
 @media (min-width: 1200px) {
-    body {
-        
-    }
 
-   header{
-        
-    } 
-
-    .logo img {
-        width: 400px;
-    }
-
-    .abrir-menu,
-    .cerrar-menu {
-        display: none;
-
-    }
-
-    .nav {
-        visibility: visible;
-        position: initial;
-        background-color: white;
-    }
-
-    .nav-list {
-        display: flex;
+    .menu {
+        transform: translatex(0%);
+        background-color: transparent;
+        top: 0;
         flex-direction: row;
+        justify-content: end;
         align-items: center;
     }
 
-    li {
-        margin-left: 20px;
-        
-    }
-
-    .contenedor{
+    .contenedor {
         display: flex;
-         background-image: url(/assets/img/VISUAL_MARTIZ_2.png);
+        background-image: url(../img/VISUAL_MARTIZ_2.png);
         background-size: cover;
         background-position: center;
-        height: 700px;
-     }
+        max-height: 800px;
+    }
 }
