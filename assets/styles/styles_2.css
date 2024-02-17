@@ -177,9 +177,11 @@ main {
 
 /********************* VIDEO MAIN *****************************************/
 
-.video {
-    width: 100%;
-    margin-top: 20px;
+.videos {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 1em;
+margin: 1em;
 
 }
 
@@ -291,6 +293,7 @@ footer {
         margin: 1em;
     }
 
+   
     
     .musica-container{
         grid-template-columns: 1fr 1fr;
@@ -341,6 +344,12 @@ footer {
         margin: 1em;
     }
 
+    .videos {
+        
+        grid-template-columns: 1fr 1fr;
+     
+     
+     }
     .fotografia_contacto{
         margin: 1em;
     }
