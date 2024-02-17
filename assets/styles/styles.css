@@ -86,7 +86,7 @@ a:hover {
 
 .contenedor {
     display: flex;
-    background-image: url(../img/VISUAL_MARTIZ_2.png);
+    background-image: url(../img/martiz_portada.gif);
     background-size: cover;
     background-position: center;
     height: 700px;
@@ -133,7 +133,7 @@ footer {
 
     .contenedor {
         display: flex;
-        background-image: url(../img/VISUAL_MARTIZ_2.png);
+        background-image: url(../img/martiz_portada.gif);
         background-size: cover;
         background-position: center;
         height: 1000px;
@@ -181,7 +181,7 @@ footer {
 
     .contenedor {
         display: flex;
-        background-image: url(../img/VISUAL_MARTIZ_2.png);
+        background-image: url(../img/martiz_portada.gif);
         background-size: cover;
         background-position: center;
         max-height: 800px;
