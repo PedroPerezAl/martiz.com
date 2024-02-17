@@ -16,6 +16,9 @@ body {
     box-sizing: border-box;
 }
 
+img{
+    border-radius: 10px;
+}
 body p {
     text-align: justify;
 }
@@ -215,9 +218,18 @@ table {
     margin: 1em;
 }
 
+table a{
+    color: white;
+}
+table a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+}
 table th {
     background-color: white;
     color: black;
+    
 }
 
 table td {
