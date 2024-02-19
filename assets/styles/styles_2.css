@@ -2,10 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=PT+Sans:ital@1&display=swap');
 
-/*MEDIDAS FIRST MOBILE */
-
-
-/******************** HEADER ******************************/
+/*MEDIDAS MOBILE FIRST */
 
 body {
     background-color: black;
@@ -16,27 +13,20 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
-    
 }
 
-img{
+body img {
     border-radius: 10px;
+    width: 100%;
 }
+
 body p {
     text-align: justify;
 }
-/*
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
 
-}*/
-
-
-
+/******************** HEADER ******************************/
 
 header {
-   /* grid-column: 1/3;*/
     display: flex;
     background-color: white;
     width: 100%;
@@ -46,7 +36,6 @@ header {
 .logo {
     width: 150px;
 }
-
 
 .menu {
     width: 100%;
@@ -80,10 +69,12 @@ header {
 #hamburguesa:checked~.menu {
     transform: translatey(0);
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 a:hover {
     color: rgba(75, 72, 72, 0.76);
 }
@@ -91,8 +82,7 @@ a:hover {
 
 /********************* BIO MAIN *****************************************/
 main {
-   /* display: grid;
-    grid-template-columns: 1fr;*/
+
     background-color: black;
     justify-content: center;
 }
@@ -102,60 +92,51 @@ main {
 }
 
 .fotografia_bio {
-
     margin: 1em;
-} 
-
-.fotografia_bio img {
-    width: 100%;
 }
 
-.texto_bio {
 
+.texto_bio {
     color: white;
     background-color: rgb(0, 0, 0);
     text-align: justify;
     justify-content: center;
-
-
-
 }
 
-.bio-container a{
+.bio-container a {
     color: white;
 }
 
-.bio-container a:hover{
+.bio-container a:hover {
     color: gray;
 }
+
 /*********** MUSICA MAIN ***********************/
-.musica-container{
+.musica-container {
     grid-template-columns: 1fr;
     padding: 1em;
     color: white;
 }
 
-.musica-container a{
+.musica-container a {
     color: white;
-   
 }
 
-.musica-container i{
+.musica-container i {
     margin-right: 20px;
 }
 
-.texto_musica{
+.texto_musica {
     text-align: center;
     margin: 10px;
 }
-.texto_musica :nth-child(4){
-    text-align: justify;
 
+.texto_musica :nth-child(4) {
+    text-align: justify;
 }
 
 .foto_disco {
     width: 100%;
-
 }
 
 .musica_portada {
@@ -180,17 +161,13 @@ main {
     color: white;
 }
 
-
-
-
 /********************* VIDEO MAIN *****************************************/
 
 .videos {
-   display: grid;
-   grid-template-columns: 1fr;
-   gap: 1em;
-margin: 1em;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin: 1em;
 }
 
 /********************* CONCIERTOS MAIN *****************************************/
@@ -198,20 +175,16 @@ margin: 1em;
     margin: 1em;
     display: grid;
     grid-template-columns: 1fr;
-    
 }
 
 
-.centrado{
+.centrado {
     color: white;
     text-align: center;
 }
-.foto_tabla img {
-    width: 100%;
-    
-}
 
-.foto_tabla h1{
+
+.foto_tabla h1 {
     color: white;
 }
 
@@ -221,18 +194,19 @@ table {
     margin: 1em;
 }
 
-table a{
+table a {
     color: white;
 }
-table a:hover{
+
+table a:hover {
     background-color: white;
     color: black;
     border-radius: 2px;
 }
+
 table th {
     background-color: white;
     color: black;
-    
 }
 
 table td {
@@ -247,18 +221,38 @@ table td {
     margin: 1em;
 }
 
-.galeria img {
-    width: 100%;
-    border-radius: 10px;
+/********************* NOTICIAS MAIN *****************************************/
+.noticias_main,
+aside {
+    color: white;
+
+}
+
+aside{
+border-bottom: 1px solid white;
+}
+.noticia_card {
+    border-bottom: 1px solid white;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.foto_noticia {
+    width: 50%;
+    align-self: center;
+    padding: 5px;
+
+}
+
+.texto_noticia {
+    margin: 1em;
 }
 
 /********************* CONTACTO MAIN *****************************************/
 .contacto {
     margin: 1em;
-}
-
-.fotografia_contacto img {
-    width: 100%;
 }
 
 .formulario {
@@ -268,7 +262,6 @@ table td {
 }
 
 /********************* FOOTER *****************************************/
-
 
 footer {
     grid-column: 1/3;
@@ -280,7 +273,6 @@ footer {
     padding: 10px;
 }
 
-
 .logos {
     margin: 10px;
 }
@@ -291,7 +283,6 @@ footer {
 
 .politicas {
     margin-bottom: 10px;
-
 }
 
 .politicas a {
@@ -300,12 +291,10 @@ footer {
 
 /****************** ESTILOS BIO ****************************/
 
-
-
 /*MEDIAQUERYS */
 /* TABLET */
 @media (min-width: 480px) {
-   
+
 
     .contenedor {
         display: flex;
@@ -315,29 +304,24 @@ footer {
         height: 1000px;
     }
 
-    .texto_bio{
-    
-        
-        margin: 1em;
-        
-    }
-
-    .formulario{
+    .texto_bio {
         margin: 1em;
     }
 
-    .fotografia_contacto{
+    .formulario {
         margin: 1em;
     }
 
-   
-    
-    .musica-container{
+    .fotografia_contacto {
+        margin: 1em;
+    }
+
+    .musica-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
-    .foto_tabla{
+
+    .foto_tabla {
         width: 50%;
         margin: 0 auto;
     }
@@ -347,6 +331,48 @@ footer {
         grid-template-columns: 1fr 1fr;
         gap: 1em;
         margin: 1em;
+    }
+
+    aside {
+        grid-column: 1/3;
+        
+        background-color: black;
+        border-right: 1px solid white;
+    }
+
+    .noticias_main {
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .grid-container3 {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+    }
+
+    .noticia_card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .noticia_card h3 {
+        text-align: left;
+    }
+
+    .foto_noticia {
+        width: 20%;
+    }
+
+    .foto_noticia img{
+        width: 100%;
+    }
+
+    header{
+        grid-column: 1/3;
     }
 
 }
@@ -357,9 +383,10 @@ footer {
         width: 200px;
     }
 
-    .current{
+    .current {
         text-decoration: underline;
     }
+
     .menu {
         transform: translatex(0%);
         background-color: transparent;
@@ -374,37 +401,36 @@ footer {
     #icono {
         display: none;
     }
+
     main {
-       display: grid;
+        display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
-
     }
 
     .texto_bio {
-        margin:0;
+        margin: 0;
         margin-right: 1em;
     }
 
-    .musica-container{
+    .musica-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .formulario{
+    .formulario {
         margin: 1em;
     }
 
     .videos {
         display: grid;
         grid-template-columns: 1fr 1fr;
-     
-     
-     }
-    .fotografia_contacto{
+    }
+
+    .fotografia_contacto {
         margin: 1em;
     }
 
-    .foto_tabla{
+    .foto_tabla {
         width: 50%;
         margin: 0 auto;
     }
@@ -415,18 +441,62 @@ footer {
         gap: 1em;
         margin: 1em;
     }
+
+    .grid-container3 {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+    }
+
+    aside {
+        grid-column: 1/2;
+        background-color: wheat;
+        background-color: black;
+        border-right: 1px solid white;
+    }
+    .noticias_main {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+
+    }
+    header{
+        grid-column: 1/3;
+    }
+    .noticia_card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .noticia_card h3 {
+        text-align: left;
+    }
+
+    .foto_noticia {
+        width: 5em;
+    }
+    .foto_noticia img{
+        width: 100%;
+    }
 }
 
 /* DISPOSITIVOS EXTRA-GRANDES */
 @media (min-width: 1200px) {
 
-    .grid_container_2{
+
+    .grid_container_2 {
         display: grid;
         grid-template-columns: auto;
-        
     }
+
     .logo {
         width: 200px;
+    }
+
+    header {
+        grid-column: 1/3;
+
     }
 
     .menu {
@@ -443,29 +513,69 @@ footer {
     #icono {
         display: none;
     }
-   
+
     .texto_bio {
-        margin:0;
+        margin: 0;
         margin-right: 1em;
         margin-left: 1em;
     }
 
-    .formulario{
+    .formulario {
         margin: 1em;
     }
 
-    .grid-container-musica{
+    .grid-container-musica {
         text-align: center;
     }
-table{
-    columns: span 2;
-}
+
+    table {
+        columns: span 2;
+    }
 
 
-.foto_tabla{
-    width: 50%;
-    margin: 0 auto;
-}
+    .foto_tabla {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    aside {
+        grid-column: 1/2;
+        background-color: wheat;
+        background-color: black;
+        border-right: 1px solid white;
+    }
+
+    .noticias_main {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .grid-container3 {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+    }
+
+    .noticia_card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .noticia_card h3 {
+        text-align: left;
+    }
+
+    .foto_noticia {
+        width: 20%;
+    }
+
+    .foto_noticia img{
+        width: 100%;
+    }
+
 
 
 
