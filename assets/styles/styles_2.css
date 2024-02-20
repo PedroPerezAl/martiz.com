@@ -24,6 +24,14 @@ body p {
     text-align: justify;
 }
 
+body a{
+    text-decoration: none;
+}
+
+body li{
+    list-style: none;
+}
+
 /******************** HEADER ******************************/
 
 header {
@@ -161,6 +169,11 @@ main {
     color: white;
 }
 
+.texto_musica a:hover{
+    text-decoration: underline;
+    
+}
+
 /********************* VIDEO MAIN *****************************************/
 
 .videos {
@@ -230,6 +243,7 @@ aside {
 
 aside{
 border-bottom: 1px solid white;
+text-align: center;
 }
 .noticia_card {
     border-bottom: 1px solid white;
@@ -248,6 +262,16 @@ border-bottom: 1px solid white;
 
 .texto_noticia {
     margin: 1em;
+}
+
+.link_noticia a:nth-of-type(1n){
+    color: white;
+  
+}
+
+
+.link_noticia a:hover{
+text-decoration: underline;
 }
 
 /********************* CONTACTO MAIN *****************************************/
@@ -452,6 +476,7 @@ footer {
         background-color: wheat;
         background-color: black;
         border-right: 1px solid white;
+        text-align: left;
     }
     .noticias_main {
         grid-column: 2/3;
