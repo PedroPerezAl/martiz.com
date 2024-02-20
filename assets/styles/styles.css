@@ -132,6 +132,10 @@ footer {
         background-position: center;
         height: 1000px;
     }
+
+    .foto_noticia{
+        width: 400px;
+    }
 }
 
 /* DISPOSITIVOS GRANDES */
